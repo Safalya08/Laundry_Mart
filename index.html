@@ -4,24 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Laundry Mart</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
-    <header>
-      <h1><-------- Welcome to Laundry Mart -----------></h1>
+    <nav class="navbar">
+      <h2 class="logo">LaundryMart</h2>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#services">Services</a></li> 
+        <li><a href="#price-list">Price</a></li>
+        <li><a href="#booking">Contact</a></li>
+        <br>
+      </ul>
+      <div class="user-btn">Username</div>
+    </nav>
+
+    <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Revitalize Your Clothes<br><span>Laundry Services</span></h1>
       <p>
-        Laundry Wallah / Laundry Mart is your trusted and convenient laundry
-        service provider. We offer high-quality washing, drying and ironing
-        services with great care and attention. Our trained team ensures that
-        your clothes are handled professionally. We use clean and hygienic
-        processes to maintain fabric quality. Our goal is to save your time and
-        make laundry easy and stress-free for you. Whether daily wear or
-        delicate garments, we treat all clothes like our own.
+        Premium washing, dry cleaning and ironing services with care.
+        Schedule a pickup and enjoy fresh clothes every day.
       </p>
+      <button class="cta-btn">Book a service today!</button>
+    </div>
 
-     <img src="image/laudry.png" alt="Laundry Image" />
-    </header>
+    <div class="hero-img">
+      <img src="image/lundry2.png" alt="Laundry Image">
+    </div>
+  </header>
 
+  <br>
+  <br>
     <main>
     <section id="services"
       <h2>Our Services</h2>
@@ -32,7 +48,6 @@
         <li>Stain Removal</li>
         <li>Express Services</li>
         <li>Special Garment Care</li>
-        <li>And more...</li>
       </ul>
     </section>
 
@@ -70,21 +85,16 @@
       </table>
     </section>
 
-    <section id="booking">
-        <h2>Book Now</h2>
+   <!-- BOOKING -->
+  <section id="booking">
+    <h2>Book Now</h2>
     <form>
-        <label>Name: </label>
-        <input type="text" required>
-
-        <label>Email: </label>
-        <input type="email" required>
-
-        <label>Phone: </label>
-        <input type="tel" required>
-
-        <input type="submit" value="Submit">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="tel" placeholder="Phone" required>
+      <button type="submit">Submit</button>
     </form>
-    </section>
+  </section>
     </main>
 
     <footer>
@@ -93,5 +103,3 @@
 
   </body>
 </html>
-
-
