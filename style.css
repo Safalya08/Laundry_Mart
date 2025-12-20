@@ -1,0 +1,250 @@
+/* ---------------- RESET ---------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  color: #333;
+}
+
+/* ---------------- NAVBAR ---------------- */
+.navbar {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 70px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #7a8a99;
+  font-size: 14px;
+}
+
+.user-btn {
+  background: #eaf6ff;
+  color: #1da1f2;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* ---------------- HERO ---------------- */
+.hero {
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 90px;
+}
+
+.hero-left {
+  max-width: 500px;
+}
+
+.hero-left h1 {
+  font-size: 44px;
+  line-height: 1.3;
+  color: #2c3e50;
+}
+
+.hero-left h1 span {
+  color: #1da1f2;
+}
+
+.hero-left p {
+  margin-top: 20px;
+  font-size: 15px;
+  color: #7a8a99;
+  line-height: 1.6;
+}
+
+/* CTA BUTTON – MATCHING IMAGE */
+.cta-btn {
+  margin-top: 30px;
+  background-color: #1da1f2;
+  color: #ffffff;
+  padding: 18px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(29, 161, 242, 0.35);
+}
+
+/* ---------------- HERO IMAGE ---------------- */
+.hero-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img img {
+  width: 420px;
+  max-width: 100%;
+}
+
+/* ---------------- SERVICES ---------------- */
+main {
+  padding: 60px 90px;
+}
+
+#services h2,
+#price-list h2,
+#booking h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* ================== SERVICES SECTION ================== */
+#services {
+  margin-top: 80px;
+  padding: 60px 0;
+}
+
+#services h2 {
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+/* Turn list into modern cards */
+#services ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  padding: 0;
+}
+
+#services ul li {
+  background: #ffffff;
+  padding: 30px 25px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c3e50;
+  transition: transform 0.3s ease;
+}
+
+#services ul li:hover {
+  transform: translateY(-6px);
+}
+
+/* ================== PRICE LIST ================== */
+#price-list {
+  margin-top: 100px;
+}
+
+#price-list h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+#price-list table {
+  width: 70%;
+  border-collapse: collapse;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+#price-list th {
+  background: #1da1f2;
+  color: #ffffff;
+  padding: 14px;
+  font-size: 15px;
+}
+
+#price-list td {
+  padding: 14px;
+  font-size: 15px;
+  color: #555;
+  background: #ffffff;
+}
+
+#price-list tr:nth-child(even) td {
+  background: #f8fbff;
+}
+
+/* ================== BOOKING SECTION ================== */
+#booking {
+  margin-top: 100px;
+  padding: 60px 0;
+  background: #f7fbff;
+}
+
+#booking h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+#booking form {
+  max-width: 420px;
+}
+
+#booking input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+
+#booking input:focus {
+  outline: none;
+  border-color: #1da1f2;
+}
+
+#booking button {
+  width: 100%;
+  padding: 15px;
+  background: #1da1f2;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(29, 161, 242, 0.35);
+}
+
+/* ================== FOOTER ================== */
+footer {
+  padding: 25px;
+  text-align: center;
+  background: #ffffff;
+  color: #7a8a99;
+  font-size: 14px;
+}
+footer a {
+  color: #1da1f2;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
